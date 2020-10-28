@@ -5,8 +5,119 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CurrencyConverter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
+    <Grid Background="#FF0C0528" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.4*"/>
+            <RowDefinition/>
+            <RowDefinition Height="0.4*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.ColumnSpan="4" 
+                   HorizontalAlignment="Center"
+                   Text="Курсы валют" 
+                   FontSize="30"
+                   Foreground="White"
+                   FontWeight="Bold"/>
+
+        <Button Grid.Column="3" 
+                Background="{x:Null}" 
+                Margin="150 5 10 5"
+                x:Name="CloseBtn"
+                BorderThickness="0"
+                Click="CloseBtn_Click">
+            <TextBlock  
+                   HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                   Margin="5"
+                   Text="x" 
+                   FontSize="30"
+                   Foreground="White"
+                   FontWeight="Bold"/>
+        </Button>
+
+        <TextBlock Grid.Row="1"
+                   Text="ВАЛЮТА"
+                   FontSize="25"
+                   Foreground="White"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
         
+        <TextBlock Grid.Row="1"
+                   Grid.Column="1"
+                   Text="КУРС ЦБ РФ"
+                   FontSize="25"
+                   Foreground="White"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+        
+        <TextBlock Grid.Row="1"
+                   Grid.Column="2"
+                   Grid.ColumnSpan="2"
+                   Text="КУРСЫ В ОБМЕННЫХ ПУНКТАХ"
+                   FontSize="25"
+                   Foreground="White"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+
+        <TextBlock Grid.Row="2"
+                   Grid.Column="2"
+                   Text="ПОКУПКА"
+                   FontSize="25"
+                   Foreground="White"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+
+        <TextBlock Grid.Row="2"
+                   Grid.Column="3"
+                   Text="ПРОДАЖА"
+                   FontSize="25"
+                   Foreground="White"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+
+        <TextBlock Grid.Row="3"
+                   Text="USD"
+                   FontSize="25"
+                   Foreground="#FF7FDC3C"
+                   FontWeight="Bold"
+                   Background="{x:Null}"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+
+        <TextBlock Grid.Row="4"
+                   Text="EUR"
+                   FontSize="25"
+                   Foreground="#FF7FDC3C"
+                   FontWeight="Bold"
+                   Background="{x:Null}"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+
+        <TextBlock x:Name="usdCB" Grid.Row="3"
+                   Grid.Column="1"
+                   Text="00.00"
+                   FontSize="25"
+                   Foreground="White"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+
+        <TextBlock x:Name="eurCB" Grid.Row="4"
+                   Grid.Column="1"
+                   Text="00.00"
+                   FontSize="25"
+                   Foreground="White"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+
+
     </Grid>
 </Window>
