@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:CurrencyConverter"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" Loaded="Window_Loaded">
+    
     <Grid Background="#FF0C0528" >
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -19,7 +20,7 @@
             <RowDefinition Height="0.4*"/>
             <RowDefinition/>
             <RowDefinition/>
-            
+
         </Grid.RowDefinitions>
 
         <Border Grid.Row="1" Grid.RowSpan="4" Background="#FF263E46" Margin="15" CornerRadius="10" BorderThickness="1"/>
@@ -49,8 +50,7 @@
                    Margin="5"
                    Text="x" 
                    FontSize="30"
-                   Foreground="White"
-                   FontWeight="Bold"/>
+                   Foreground="White"/>
         </Button>
 
         <TextBlock Grid.Row="1"
@@ -59,7 +59,7 @@
                    Foreground="White"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"/>
-        
+
         <TextBlock Grid.Row="1"
                    Grid.Column="1"
                    Text="КУРС ЦБ РФ"
@@ -67,7 +67,7 @@
                    Foreground="White"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"/>
-        
+
         <TextBlock Grid.Row="1"
                    Grid.Column="2"
                    Grid.ColumnSpan="2"
@@ -142,7 +142,7 @@
                    Foreground="White"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"/>
-        
+
         <TextBlock x:Name="usdSale" Grid.Row="3"
                    Grid.Column="3"
                    Text="00.00"
@@ -159,7 +159,7 @@
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"/>
 
-        
+
 
 
     </Grid>

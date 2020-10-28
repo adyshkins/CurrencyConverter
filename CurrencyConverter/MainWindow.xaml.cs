@@ -37,14 +37,12 @@ namespace CurrencyConverter
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             System.Net.WebClient webClient = new System.Net.WebClient();
-            String Respons = webClient.DownloadString("https://moskva.bankiros.ru/currency");
+            String Respons = webClient.DownloadString("https://moskva.vbr.ru/banki/al_fa-bank/kurs-valut/usd/");
             // span id="u">79.09</span>
-            usdCB.Text = Respons;//System.Text.RegularExpressions.Regex.Match(Respons, @"(<td class=""mark - text"">)([0-9]+\.[0-9]+)</td>").Groups[1].Value;
+            usdCB.Text = System.Text.RegularExpressions.Regex.Match(Respons, @"ЦБ USD</a></td><td>([0-9]+\,[0-9]+)</td>").Groups[1].Value;
+            eurCB.Text = System.Text.RegularExpressions.Regex.Match(Respons, @"ЦБ EUR</a></td><td>([0-9]+\,[0-9]+)</td>").Groups[1].Value;
 
-            usdPurchase.Text = System.Text.RegularExpressions.Regex.Match(Respons, @": block"">([0-9]+\.[0-9]+)</span>").Groups[1].Value;
-            //usdCB.Text = System.Text.RegularExpressions.Regex.Match(Respons, @">([0-9]+\.[0-9]+)76,46</div>").Value;
-
-            // ([0-9]+\.[0-9]+)
+           
         }
     }
 }
