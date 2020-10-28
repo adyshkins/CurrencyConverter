@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CurrencyConverter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" Loaded="Window_Loaded">
     <Grid Background="#FF0C0528" >
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -19,7 +19,16 @@
             <RowDefinition Height="0.4*"/>
             <RowDefinition/>
             <RowDefinition/>
+            
         </Grid.RowDefinitions>
+
+        <Border Grid.Row="1" Grid.RowSpan="4" Background="#FF263E46" Margin="15" CornerRadius="10" BorderThickness="1"/>
+        <Border Grid.Row="1" Grid.Column="1" Grid.RowSpan="4" Background="#FF263E46" Margin="15" CornerRadius="10" BorderThickness="1"/>
+        <Border Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Background="#FF263E46" Margin="15" CornerRadius="10" BorderThickness="1"/>
+        <Border Grid.Row="2" Grid.Column="2" Grid.RowSpan="3" Background="#FF263E46" Margin="15 5 15 15" CornerRadius="10" BorderThickness="1"/>
+        <Border Grid.Row="2" Grid.Column="3" Grid.RowSpan="3" Background="#FF263E46" Margin="15 5 15 15" CornerRadius="10" BorderThickness="1"/>
+
+
 
         <TextBlock Grid.ColumnSpan="4" 
                    HorizontalAlignment="Center"
