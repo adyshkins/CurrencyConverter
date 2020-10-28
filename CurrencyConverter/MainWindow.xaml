@@ -118,6 +118,40 @@
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"/>
 
+        <TextBlock x:Name="usdPurchase" Grid.Row="3"
+                   Grid.Column="2"
+                   Text="00.00"
+                   FontSize="25"
+                   Foreground="White"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+
+        <TextBlock x:Name="eurPurchase" Grid.Row="4"
+                   Grid.Column="2"
+                   Text="00.00"
+                   FontSize="25"
+                   Foreground="White"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+        
+        <TextBlock x:Name="usdSale" Grid.Row="3"
+                   Grid.Column="3"
+                   Text="00.00"
+                   FontSize="25"
+                   Foreground="White"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+
+        <TextBlock x:Name="eurSale" Grid.Row="4"
+                   Grid.Column="3"
+                   Text="00.00"
+                   FontSize="25"
+                   Foreground="White"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+
+        
+
 
     </Grid>
 </Window>
